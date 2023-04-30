@@ -1,3 +1,19 @@
+.flexRow--main-header {
+  background-color: #0c0c0c;
+}
+
+.flexRow--main-header-mobile {
+  background-color: #0c0c0c;
+}
+
+.flexRow--row-home {
+  background-color: #000000;
+  background-image: url("https://www.transparenttextures.com/patterns/gravel.png");
+  /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+  padding: 50px 0px;
+  background-color: #000;
+}
+
 .flexRowContent--menu-link,
 .flexRowContent--main-header {
   padding: 0 0.5rem;
@@ -18,18 +34,21 @@
 }
 
 .flexRowContent--menu-link {
-  background-color: #03044e;
+  background-color: #f40009 !important;
   color: #fff;
 }
 
 .flexRowContent--main-header {
-  background-color: #f0f0f0;
+  /* background-color: #f0f0f0; */
+  background-color: #0c0c0c !important;
+  box-shadow: none !important;
 }
 
 .flexRowContent--main-header-mobile {
   align-items: center;
   padding: 0.625rem 0.5rem;
-  background-color: #f0f0f0;
+  background-color: #0c0c0c !important;
+  /* background-color: #FDEBD0; */
 }
 
 .flexRowContent--menu-link :global(.vtex-menu-2-x-styledLink) {
@@ -43,7 +62,7 @@
 }
 
 .flexRow--deals {
-  background-color: #0F3E99;
+  background-color: #000000 !important;
   padding: 14px 0px;
 }
 
@@ -95,4 +114,111 @@
 
 .flexRow--addToCartRow {
   padding-bottom: 1rem;
+}
+
+.flexRow--imageFixed {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 650px;
+  background-image: url("https://image.lexica.art/full_jpg/b1e32d97-ed06-4c07-aecc-d5c0e9f3eb3d");
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+@media screen and (max-width: 640px) {
+  .flexRow--imageFixed {
+    height: 250px;
+  }
+  .flexRow--imageFixed.flexRow--imageFixed :global(.vtex-rich-text-0-x-strong) {
+    height: 250px !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    text-align: center !important;
+  }
+}
+
+.flexRow--iframe {
+  padding: 50px 0px;
+  background-color: #0c0c0c;
+}
+
+.flexRow--newsletter {
+  background-color: #000000;
+  background-image: url("https://www.transparenttextures.com/patterns/gravel.png");
+  /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+  background-color: #000;
+  padding: 50px 0px;
+}
+
+.flexRow--shelf {
+  background-color: #000000;
+  background-image: url("https://www.transparenttextures.com/patterns/gravel.png");
+  background-color: black !important;
+  padding-bottom: 50px;
+}
+
+.flexRow--menu-row,
+.flexRow--payment-methods,
+.flexRow--credits {
+  background-color: #0c0c0c;
+}
+
+.flexRow--combos {
+  background-color: #000000;
+  background-image: url("https://www.transparenttextures.com/patterns/gravel.png");
+  /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+  padding: 50px 0px;
+  background-color: #000;
+}
+
+.flexCol--deals1,
+.flexCol--deals2,
+.flexCol--deals3,
+.flexCol--deals4 {
+  -webkit-animation: fade-in 1.2s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+  animation: fade-in 1.2s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+}
+
+@-webkit-keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+/* SCROLL  */
+
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #f40009;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:active {
+  background-color: #e6e6e6;
+}
+
+::-webkit-scrollbar-track {
+  background: #212121;
+  border-radius: 4px;
 }

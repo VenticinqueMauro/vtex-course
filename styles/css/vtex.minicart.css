@@ -1,0 +1,37 @@
+.cartIcon--cart--cart {
+    transition: 150ms all;
+}
+
+.cartIcon--cart--cart:hover {
+    color: #e6e6e6;
+}
+
+
+.openIconContainer--cart:hover :global(.vtex-button) {
+    background-color: transparent !important;
+}
+
+.openIconContainer {
+    -webkit-animation: fade-in 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+    animation: fade-in 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+
+@-webkit-keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}

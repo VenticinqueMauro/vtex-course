@@ -1,0 +1,24 @@
+.image{
+    /* background-color: black !important; */
+    /* filter: drop-shadow(2px 2px 5px red); */
+    transition: 400ms all;
+
+}
+
+.image:hover{
+    filter: drop-shadow(2px 2px 15px red);
+
+}
+
+.image:hover{
+    transform: scale(1.05);
+}
+
+.nameContainer{
+    display: flex !important;
+    justify-content: center !important;
+}
+
+.brandName{
+    color: #e6f1e6 !important;
+}

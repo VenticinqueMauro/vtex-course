@@ -31,11 +31,11 @@
 }
 
 .savings--summary {
-  background: #8BC34A;
+  background: #2E2E2E;
   border-radius: 1000px;
   align-items: center;
   display: flex;
-
+  letter-spacing: 1px;
   padding-left: 0.5rem;
   padding-right: 0.5rem;
   font-size: 0.875rem;

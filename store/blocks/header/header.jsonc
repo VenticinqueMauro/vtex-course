@@ -1,9 +1,15 @@
 {
   "header": {
-    "blocks": ["header-layout.desktop", "header-layout.mobile"]
+    "blocks": [
+      "header-layout.desktop",
+      "header-layout.mobile"
+    ]
   },
   "header.full": {
-    "blocks": ["header-layout.desktop", "header-layout.mobile"]
+    "blocks": [
+      "header-layout.desktop",
+      "header-layout.mobile"
+    ]
   },
   "header-layout.desktop": {
     "children": [
@@ -12,26 +18,28 @@
       "sticky-layout#4-desktop"
     ]
   },
-
   "flex-layout.row#1-desktop": {
-    "children": ["telemarketing"],
+    "children": [
+      "telemarketing"
+    ],
     "props": {
       "fullWidth": true
     }
   },
-  
   "flex-layout.row#3-desktop": {
     "props": {
       "blockClass": "menu-link",
       "horizontalAlign": "center",
+      "verticalAlign": "center",
       "preventHorizontalStretch": true,
       "preventVerticalStretch": true,
       "fullWidth": true
     },
     "children": [
-      "vtex.menu@2.x:menu#websites",
-      "flex-layout.col#spacer",
-      "vtex.menu@2.x:menu#institutional"
+      "vtex.menu@2.x:menu#websites"
+      // "flex-layout.col#spacer",
+      // "vtex.menu@2.x:menu#institutional",
+      // "vtex.menu@2.x:menu#descuentos"
     ]
   },
   "flex-layout.col#spacer": {
@@ -43,7 +51,9 @@
     "props": {
       "blockClass": "sticky-header"
     },
-    "children": ["flex-layout.row#4-desktop"]
+    "children": [
+      "flex-layout.row#4-desktop"
+    ]
   },
   "flex-layout.row#4-desktop": {
     "props": {
@@ -52,14 +62,16 @@
       "verticalAlign": "center",
       "preventHorizontalStretch": true,
       "preventVerticalStretch": true,
-      "fullWidth": true
+      "fullWidth": false
     },
     "children": [
-      "flex-layout.col#logo-desktop",
       "flex-layout.col#category-menu",
       "flex-layout.col#spacer",
-      "search-bar",
-      "locale-switcher",
+      "flex-layout.col#logo-desktop",
+      "flex-layout.col#spacer",
+      "flex-layout.col#search-bar",
+      // "search-bar",
+      // "locale-switcher",
       "login",
       "minicart.v2"
     ]
@@ -68,32 +80,53 @@
     "props": {
       "verticalAlign": "middle"
     },
-    "children": ["logo#desktop"]
+    "children": [
+      "logo#desktop"
+    ]
   },
   "flex-layout.col#category-menu": {
     "props": {
       "verticalAlign": "middle"
     },
-    "children": ["vtex.menu@2.x:menu#category-menu"]
+    "children": [
+      "vtex.menu@2.x:menu#category-menu"
+    ]
+  },
+  "flex-layout.col#search-bar": {
+    "props": {
+      "verticalAlign": "middle"
+    },
+    "children": [
+      "search-bar"
+    ]
   },
   "logo#desktop": {
     "props": {
+      "blockClass": "logoBurger",
       "title": "Logo",
       "href": "/",
-      "url": "https://storecomponents.vteximg.com.br/arquivos/store-theme-logo.png",
-      "width": "180",
-      "height": "12"
+      // "url": "https://media3.giphy.com/media/5YpIssZR9aNPFCKScs/giphy.gif?cid=6c09b9526ba05bc285cd3303a6579065fc5f7916eb35ff97&rid=giphy.gif&ct=g",
+      // "url": "https://img.freepik.com/premium-vector/burger-logo-vector-art-design_260747-237.jpg?w=2000",
+      "url": "assets/logoBr.png",
+      "width": "130",
+      "height": "130"
     }
   },
   "header-layout.mobile": {
-    "children": ["sticky-layout#1-mobile"]
+    "children": [
+      "sticky-layout#1-mobile"
+    ]
   },
   "sticky-layout#1-mobile": {
-    "children": ["flex-layout.row#1-mobile"]
+    "children": [
+      "flex-layout.row#1-mobile"
+    ]
   },
   "flex-layout.row#1-mobile": {
     "children": [
       "drawer",
+      "flex-layout.col#spacer",
+      "flex-layout.col#spacer",
       "logo#mobile",
       "flex-layout.col#spacer",
       "login",
@@ -107,9 +140,10 @@
     }
   },
   "drawer": {
-    "children": ["menu#drawer"]
+    "children": [
+      "menu#drawer"
+    ]
   },
-
   "menu#drawer": {
     "children": [
       "menu-item#category-apparel",
@@ -117,17 +151,17 @@
       "menu-item#more"
     ],
     "props": {
+      "blockClass":"mi-drawer",
       "orientation": "vertical"
     }
   },
-
   "logo#mobile": {
     "props": {
       "title": "Logo",
       "href": "/",
-      "url": "https://storecomponents.vteximg.com.br/arquivos/store-theme-logo-mobile.png",
-      "width": "77.5",
-      "height": "27.5"
+      "url": "https://img.freepik.com/premium-vector/burger-logo-vector-art-design_260747-237.jpg?w=2000",
+      "width": "100",
+      "height": "100"
     }
   }
 }

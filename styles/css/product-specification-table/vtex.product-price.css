@@ -1,0 +1,7 @@
+.currencyCode--summary,
+.currencyInteger--summary,
+.currencyGroup--summary,
+.currencyDecimal--summary,
+.currencyFraction--summary{
+    color: #f40009;
+    }

@@ -4,7 +4,7 @@
       "flex-layout.row#product-breadcrumb",
       "condition-layout.product#availability",
       "flex-layout.row#description",
-      "flex-layout.row#specifications-title",
+      // "flex-layout.row#specifications-title",
       "product-specification-group#table",
       "shelf.relatedProducts",
       "product-reviews",
@@ -33,6 +33,7 @@
   },
   "condition-layout.product#availability": {
     "props": {
+      "blockClass": "availability",
       "conditions": [
         {
           "subject": "isProductAvailable"

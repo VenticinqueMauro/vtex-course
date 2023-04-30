@@ -4,23 +4,24 @@
       "experimentalOptimizeRendering": true
     },
     "children": [
-      "menu-item#category-apparel",
       "menu-item#category-home",
-      "menu-item#more"
+      "menu-item#more",
+      "menu-item#category-apparel"
     ]
   },
   "menu-item#category-apparel": {
     "props": {
+      "blockClass": "apparel",
       "id": "menu-item-category-apparel",
       "type": "custom",
       "iconId": null,
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "/apparel---accessories/",
+        "href": "/apparel---instagram/",
         "noFollow": false,
-        "tagTitle": "Apparel & Accessories",
-        "text": "Apparel & Accessories"
+        "tagTitle": "Apparel & instagram",
+        "text": "Contacto"
       }
     },
     "blocks": [
@@ -40,73 +41,78 @@
       "orientation": "vertical"
     },
     "children": [
-      "menu-item#category-apparel-clothing",
-      "menu-item#category-apparel-accessories",
-      "menu-item#category-apparel-eyeglasses"
+      "menu-item#category-apparel-facebook",
+      "menu-item#category-apparel-instagram",
+      "menu-item#category-apparel-tiktok"
     ]
   },
-  "menu-item#category-apparel-clothing": {
+  "menu-item#category-apparel-facebook": {
     "props": {
-      "id": "menu-item-category-apparel-clothing",
+      "blockClass": "facebook",
+      "id": "menu-item-category-apparel-facebook",
       "type": "custom",
       "iconId": null,
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "/apparel---accessories/clothing/",
+        "href": "#",
         "noFollow": false,
-        "tagTitle": "Clothing",
-        "text": "Clothing"
+        "tagTitle": "facebook",
+        "text": "Facebook"
       }
     }
   },
-  "menu-item#category-apparel-accessories": {
+  "menu-item#category-apparel-instagram": {
     "props": {
-      "id": "menu-item-category-apparel-accessories",
+      "blockClass": "instagram",
+      "id": "menu-item-category-apparel-instagram",
       "type": "custom",
       "iconId": null,
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "/apparel---accessories/accessories/",
+        "href": "#",
         "noFollow": false,
-        "tagTitle": "Accessories",
-        "text": "Accessories"
+        "tagTitle": "instagram",
+        "text": "Instagram"
       }
     }
   },
-  "menu-item#category-apparel-eyeglasses": {
+  "menu-item#category-apparel-tiktok": {
     "props": {
-      "id": "menu-item-category-apparel-eyeglasses",
+      "blockClass": "tiktok",
+      "id": "menu-item-category-apparel-tiktok",
       "type": "custom",
       "iconId": null,
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "/apparel---accessories/eyeglasses/",
+        "href": "#",
         "noFollow": false,
-        "tagTitle": "Eyeglasses",
-        "text": "Eyeglasses"
+        "tagTitle": "tiktok",
+        "text": "Tiktok"
       }
     }
   },
   "menu-item#category-home": {
     "props": {
+      "blockClass": "menu-item-category-home",
       "id": "menu-item-category-home",
       "type": "custom",
       "iconId": null,
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "/home---decor/",
+        "href": "/",
         "noFollow": false,
-        "tagTitle": "Home & Decor",
-        "text": "Home & Decor"
+        "tagTitle": "Inicio",
+        "text": "Inicio"
       }
     }
   },
   "menu-item#more": {
     "props": {
+      "blockClass": "more",
       "id": "menu-item-custom-sale",
       "type": "custom",
       "iconId": null,
@@ -114,9 +120,9 @@
       "itemProps": {
         "type": "internal",
         "href": "#",
-        "noFollow": true,
-        "tagTitle": "More",
-        "text": "More"
+        "noFollow": false,
+        "tagTitle": "Hamburguesas",
+        "text": "Hamburguesas"
       }
     },
     "blocks": [
@@ -125,7 +131,7 @@
   },
   "vtex.menu@2.x:submenu#more": {
     "props": {
-      "width": "100%"
+      "orientation": "vertical"
     },
     "children": [
       "flex-layout.row#menu-more"
@@ -133,8 +139,8 @@
   },
   "flex-layout.row#menu-more": {
     "children": [
-      "flex-layout.col#menu-more-1",
-      "flex-layout.col#menu-more-2"
+      "flex-layout.col#menu-more-1"
+      // "flex-layout.col#menu-more-2"
     ]
   },
   "flex-layout.col#menu-more-1": {
@@ -143,8 +149,11 @@
     ]
   },
   "flex-layout.col#menu-more-2": {
+    "props": {
+      "blockClass": "more2"
+    },
     "children": [
-      "info-card#home"
+      // "info-card#home"
     ]
   },
   "vtex.menu@2.x:menu#more": {
@@ -152,26 +161,45 @@
       "orientation": "vertical"
     },
     "children": [
-      "menu-item#about-us",
-      "menu-item#faq"
+      "menu-item#Clasicas",
+      "menu-item#Exoticas",
+      "menu-item#Gourmet"
+      // "menu-item#vegetarianos"
     ]
   },
-  "menu-item#about-us": {
+  "menu-item#Exoticas": {
     "props": {
+      "blockClass": "exoticas",
       "id": "menu-item-about-us",
       "type": "custom",
       "iconId": null,
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "/about-us",
+        "href": "/hamburguesas/exoticas",
         "noFollow": true,
         "tagTitle": "About us",
-        "text": "About us"
+        "text": "Exoticas"
       }
     }
   },
-  "menu-item#faq": {
+  "menu-item#Gourmet": {
+    "props": {
+      "blockClass": "gourmet",
+      "id": "menu-item-faq",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/hamburguesas/gourmet",
+        "noFollow": true,
+        "tagTitle": "FAQ",
+        "text": "Gourmet"
+      }
+    }
+  },
+  "menu-item#vegetarianos": {
     "props": {
       "id": "menu-item-faq",
       "type": "custom",
@@ -179,10 +207,26 @@
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "/faq",
+        "href": "H",
         "noFollow": true,
         "tagTitle": "FAQ",
-        "text": "FAQ"
+        "text": "Vegetarianos"
+      }
+    }
+  },
+  "menu-item#Clasicas": {
+    "props": {
+      "blockClass": "clasicas",
+      "id": "menu-item-faq",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/hamburguesas/clasicas",
+        "noFollow": true,
+        "tagTitle": "FAQ",
+        "text": "Clasicas"
       }
     }
   },

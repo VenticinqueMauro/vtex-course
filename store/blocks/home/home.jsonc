@@ -1,34 +1,58 @@
 {
   "store.home": {
     "blocks": [
+      // "rich-text#title-Ecommerce",
       "list-context.image-list#demo",
       /* You can make references to blocks defined in other files.
        * For example, `flex-layout.row#deals` is defined in the `deals.json` file. */
       "flex-layout.row#deals",
+      "rich-text#titleCategory",
       "__fold__",
-      "rich-text#shelf-title",
       "flex-layout.row#shelf",
-      "info-card#home",
-      "rich-text#question",
-      "rich-text#link",
-      "newsletter"
+      "flex-layout.row#combos",
+      "image#bigotes",
+      "flex-layout.row#home",
+      "link#whatsapp",
+      "flex-layout.row#imageFixed",
+      // "flex-layout.row#iframe",
+      "flex-layout.row#newsletter"
+      // "info-card#home",
+      // "rich-text#question",
+      // "rich-text#link",
+      // "newsletter"
     ]
   },
-
-  "list-context.image-list#demo": {
-    "children": ["slider-layout#demo-images"],
+  "rich-text#titleCategory": {
     "props": {
-      "height": 570,
+      "blockClass": "titleCategory",
+      "text": "**Nuestras Delicias**",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER"
+    }
+  },
+  "newsletter": {
+    "props": {
+      "label": "Recibir Noticias",
+      "submit": "Registrar",
+      "blockClass": "mi-newsletter"
+    }
+  },
+  "list-context.image-list#demo": {
+    "children": [
+      "slider-layout#demo-images"
+    ],
+    "props": {
+      "height": 650,
       "preload": true,
       "images": [
         {
-          "image": "https://storecomponents.vteximg.com.br/arquivos/Class&Style-desktop.png",
-          "mobileImage": "https://storecomponents.vteximg.com.br/arquivos/Class&Style-mobile.png"
-        },
-        {
-          "image": "https://storecomponents.vteximg.com.br/arquivos/banner-decoration.png",
-          "mobileImage": "https://storecomponents.vteximg.com.br/arquivos/banner-decoration-mobile.png"
+          "image": "https://bigpons.com.ar/bigpons/images/BANNER%20WEB%20INSTITUCIONAL-BIG%20PONS.png",
+          "mobileImage": "https://bigpons.com.ar/bigpons/images/BANNER%20WEB%20INSTITUCIONAL-BIG%20PONS.png"
         }
+        // {
+        //   "image": "https://t3.ftcdn.net/jpg/02/94/31/20/360_F_294312040_Yw5wclSBbMXSQF42LQg74QUU9XhjfIM3.jpg",
+        //   "mobileImage": "https://d1csarkz8obe9u.cloudfront.net/posterpreviews/fast-food-social-media-instagram-video-design-template-9cf832bb4520f97a3d51c1a8a7e07708_screen.jpg?ts=1664729534"
+        // }
       ]
     }
   },
@@ -39,26 +63,163 @@
         "tablet": 1,
         "phone": 1
       },
-      "infinite": true,
+      "infinite": false,
       "showNavigationArrows": "desktopOnly",
       "blockClass": "carousel"
     }
   },
-
-  "rich-text#shelf-title": {
+  "rich-text#title-Ecommerce": {
     "props": {
-      "text": "## Summer",
-      "blockClass": "shelfTitle"
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text": "## Titulo Ecommerce",
+      "blockClass": "titleEcommerce"
     }
   },
   "flex-layout.row#shelf": {
-    "children": ["list-context.product-list#demo1"]
+    "props": {
+      "blockClass": "shelf"
+    },
+    "children": [
+      "list-context.product-list#demo1"
+      // "image#señalaBurger"
+    ]
+  },
+  "flex-layout.row#combos": {
+    "props": {
+      "blockClass": "combos"
+    },
+    "children": [
+      "rich-text#combos",
+      "list-context.product-list#combos"
+      // "image#señalaBurger"
+    ]
+  },
+  "rich-text#blabla": {
+    "props": {
+      "text": "blabla",
+      "blockClass": "rich-shelf"
+    }
   },
   "list-context.product-list#demo1": {
-    "blocks": ["product-summary.shelf"],
-    "children": ["slider-layout#demo-products"],
+    "blocks": [
+      "product-summary.shelf"
+    ],
+    "children": [
+      "slider-layout#demo-products"
+    ],
     "props": {
+      "collection": "140",
       "orderBy": "OrderByTopSaleDESC"
+    }
+  },
+  "rich-text#combos": {
+    "props": {
+      "blockClass": "combos",
+      "text": "**The Ultimate Burger Bundles**"
+    }
+  },
+  "list-context.product-list#combos": {
+    "blocks": [
+      "product-summary.shelf"
+    ],
+    "children": [
+      "slider-layout#combo-products"
+    ],
+    "props": {
+      "category": "16/21",
+      "orderBy": "OrderByTopSaleDESC"
+    }
+  },
+  "image#señalaBurger": {
+    "props": {
+      "blockClass": "senalaBurger",
+      "src": "assets/senalaburger.png"
+    }
+  },
+  "image#bigotes": {
+    "props": {
+      "blockClass": "bigotes",
+      "src": "assets/bigotes.png"
+    }
+  },
+  "flex-layout.row#home": {
+    "props": {
+      "blockClass": "row-home"
+    },
+    "children": [
+      "info-card#col-left",
+      "flex-layout.col#col-right"
+    ]
+  },
+  "info-card#col-left": {
+    "props": {
+      "id": "info-card-col-left",
+      "isFullModeStyle": false,
+      "textPosition": "left",
+      "imageUrl": "https://image.lexica.art/full_jpg/319ab4b5-bbc0-4c35-bf87-5e63b9e97b70",
+      "headline": "Clásicas",
+      "callToActionText": "Ver mas",
+      "callToActionUrl": "/hamburguesas/clasicas",
+      "blockClass": "info-card-col-left",
+      "textAlignment": "center"
+    }
+  },
+  "flex-layout.col#col-right": {
+    "children": [
+      "info-card#col-right-1",
+      "info-card#col-right-2"
+    ]
+  },
+  "info-card#col-right-1": {
+    "props": {
+      "id": "info-card-col-right-1",
+      "isFullModeStyle": false,
+      "textPosition": "left",
+      "imageUrl": "https://image.lexica.art/full_jpg/4969e401-d7be-4cfe-91a1-ceab1d2df473",
+      "headline": "Exóticas",
+      "callToActionText": "Ver mas",
+      "callToActionUrl": "/hamburguesas/exoticas",
+      "blockClass": "info-card-col-right-1",
+      "textAlignment": "center"
+    }
+  },
+  "info-card#col-right-2": {
+    "props": {
+      "id": "info-card-col-right-2",
+      "isFullModeStyle": false,
+      "textPosition": "left",
+      "imageUrl": "https://image.lexica.art/full_jpg/04df9a50-9927-46fb-b27b-7293805b6938",
+      "headline": "Gourmet",
+      "callToActionText": "Ver mas",
+      "callToActionUrl": "/hamburguesas/gourmet",
+      "blockClass": "info-card-col-right-2",
+      "textAlignment": "center"
+    }
+  },
+  "flex-layout.row#newsletter": {
+    "props": {
+      "blockClass": "newsletter"
+    },
+    "children": [
+      // "rich-text#question",
+      // "rich-text#link",
+      "image#surprised",
+      "newsletter"
+    ]
+  },
+  "link#whatsapp": {
+    "props": {
+      "blockClass": "whatsapp",
+      "href": "#",
+      "label": "📞"
+    }
+  },
+  "image#surprised": {
+    "props": {
+      "blockClass": "surprised",
+      "src": "assets/surprised.png"
+      // "src": "https://media3.giphy.com/media/5YpIssZR9aNPFCKScs/giphy.gif?cid=6c09b9526ba05bc285cd3303a6579065fc5f7916eb35ff97&rid=giphy.gif&ct=g"
     }
   },
   "slider-layout#demo-products": {
@@ -73,32 +234,75 @@
       "blockClass": "shelf"
     }
   },
-
+  "slider-layout#combo-products": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 1,
+        "tablet": 1,
+        "phone": 1
+      },
+      "infinite": true,
+      "fullWidth": false,
+      "blockClass": "shelf"
+    }
+  },
   "info-card#home": {
     "props": {
       "id": "info-card-home",
       "isFullModeStyle": false,
       "textPosition": "left",
-      "imageUrl": "https://storecomponents.vteximg.com.br/arquivos/banner-infocard2.png",
-      "headline": "Clearance Sale",
-      "callToActionText": "DISCOVER",
+      "imageUrl": "https://image.lexica.art/full_jpg/d9d96c90-4618-4b0d-8d93-240b3ada16b5",
+      "headline": "Burguer Clover",
+      "subHead": "Tu hamburguesa preferida",
+      "callToActionText": "Prueba Ahora",
       "callToActionUrl": "/sale/d",
       "blockClass": "info-card-home",
       "textAlignment": "center"
     }
   },
-
   "rich-text#question": {
     "props": {
-      "text": "**This is an example store built using the VTEX platform.\nWant to know more?**",
+      "text": "**¡No esperes más, vení a probar las mejores hamburguesas!**",
       "blockClass": "question"
     }
   },
-
   "rich-text#link": {
     "props": {
       "text": "\n**Reach us at**\nwww.vtex.com.br",
       "blockClass": "link"
+    }
+  },
+  "flex-layout.row#imageFixed": {
+    "props": {
+      "blockClass": "imageFixed"
+    },
+    "children": [
+      "rich-text#question"
+    ]
+  },
+  "flex-layout.row#iframe": {
+    "props": {
+      "blockClass": "iframe"
+    },
+    "children": [
+      "iframe",
+      "rich-text#iframe"
+    ]
+  },
+  "iframe": {
+    "props": {
+      "src": "https://www.youtube.com/watch?v=VsDtnTvgDB0",
+      "width": "450",
+      "height": "400"
+    }
+  },
+  "rich-text#iframe": {
+    "props": {
+      "blockClass": "iframe",
+      "text": "La hamburguesa perfecta: jugosa, sabrosa y lista para devorar.",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "font": "t-heading-3"
     }
   }
 }

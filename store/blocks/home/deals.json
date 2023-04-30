@@ -12,6 +12,9 @@
   },
 
   "flex-layout.col#deals1": {
+    "props": {
+      "blockClass": "deals1"
+    },
     "children": [
       "image#deal1",
       "rich-text#deal1"
@@ -30,6 +33,9 @@
     }
   },
   "flex-layout.col#deals2": {
+    "props": {
+      "blockClass": "deals2"
+    },
     "children": [
       "image#deal2",
       "rich-text#deal2"
@@ -48,6 +54,9 @@
     }
   },
   "flex-layout.col#deals3": {
+    "props": {
+      "blockClass": "deals3"
+    },
     "children": [
       "image#deal3",
       "rich-text#deal3"
@@ -66,6 +75,9 @@
     }
   },
   "flex-layout.col#deals4": {
+    "props": {
+      "blockClass": "deals4"
+    },
     "children": [
       "image#deal4",
       "rich-text#deal4"

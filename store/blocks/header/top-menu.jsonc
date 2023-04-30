@@ -1,0 +1,91 @@
+{
+  "vtex.menu@2.x:menu#websites": {
+    "children": [
+      // "menu-item#cuotas",
+      "menu-item#vtex-envios",
+      "menu-item#vtex-descuentos"
+      // "menu-item#about-us"
+    ]
+  },
+  "menu-item#cuotas": {
+    "props": {
+      "id": "menu-item-shop",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "Shop",
+        "text": "EN HASTA 3 CUOTAS"
+      },
+      "iconProps": {
+        "id": "sti-check--line",
+        "size": 24,
+        "viewBox": "0 0 16 16",
+        // "activeClassName": "black",
+        "mutedClassName": "c-action-primary"
+      },
+      "iconToTheRight": true
+    }
+  },
+  "vtex.menu@2.x:menu#institutional": {
+    "children": [
+      "menu-item#vtex-envios"
+    ]
+  },
+  "menu-item#vtex-envios": {
+    "props": {
+      "blockClass": "menu-item-envios",
+      "id": "menu-item-vtex-website",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "external",
+        "href": "http://vtex.com",
+        "noFollow": false,
+        "tagTitle": "visit vtex.com",
+        "text": "ENVIOS GRATIS A PARTIR DE $2000"
+      },
+      "iconProps": {
+        "id": "sti-check--line",
+        "size": 24,
+        "viewBox": "0 0 16 16",
+        // "activeClassName": "black",
+        "mutedClassName": "c-action-primary"
+      },
+      "iconToTheRight": true
+    }
+  },
+  "vtex.menu@2.x:menu#descuentos": {
+    "children": [
+      "menu-item#vtex-descuentos"
+    ]
+  },
+  "menu-item#vtex-descuentos": {
+    "props": {
+      "blockClass": "menu-item-cuotas",
+      "id": "menu-item-vtex-descuentos",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "external",
+        "href": "http://vtex.com",
+        "noFollow": false,
+        "tagTitle": "visit vtex.com",
+        "text": "10% DE DESCUENTO EN EFECTIVO"
+      },
+      "iconProps": {
+        "id": "sti-check--line",
+        "size": 24,
+        "viewBox": "0 0 16 16",
+        // "activeClassName": "black",
+        "mutedClassName": "c-action-primary"
+      },
+      "iconToTheRight": true
+    }
+  }
+}
